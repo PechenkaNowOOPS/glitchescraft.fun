@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlitchesCraft - О сервере</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: #1a0b2c; color: #eee; }
+        header { background: #2a173e; padding: 1rem 2rem; position: sticky; top: 0; }
+        .container { display: flex; align-items: center; max-width: 960px; margin: auto; padding: 2rem; }
+        nav a { color: #d0a3ff; margin-right: 1rem; text-decoration: none; font-weight: 700; }
+        nav a:hover { color: #fff; }
+        /* Glitch banner */
+        .glitch-banner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(90,0,130,0.7), rgba(150,0,180,0.7));
+            color: #fff;
+            margin-bottom: 2rem;
+            animation: glitch 8s infinite;
+        }
+        .glitch-banner img {
+            height: 100px;
+            margin-right: 1rem;
+        }
+        @keyframes glitch {
+            0%, 5% {
+                text-shadow: 2px 0 #ff00c1, -2px 0 #00fff9;
+                transform: translate(1px, 0);
+            }
+            5.1%, 100% {
+                text-shadow: none;
+                transform: none;
+            }
+        }
+        h1 { color: #d0a3ff; margin-bottom: 1rem; }
+        ul { list-style: none; margin-left: 1.5rem; }
+        ul li { margin-bottom: 0.5rem; }
+        footer { background: #2a173e; text-align: center; padding: 1rem; font-size: 0.9rem; color: #888; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="GlitchesCraft Logo" style="height: 40px; margin-right:1rem;">
+            <nav>
+                <a href="index.html">О сервере</a>
+                <a href="rules.html">Правила</a>
+                <a href="ip.html">IP</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Glitch welcome banner -->
+    <div class="glitch-banner">
+        <img src="logo.png" alt="Logo">
+        Добро пожаловать на GlitchesCraft!
+    </div>
+    <section class="container">
+        <h1>О сервере GlitchesCraft</h1>
+        <p>Уникальный Minecraft сервер с дружелюбным сообществом и эффектом глитча.</p>
+        <ul>
+            <li>Версия: 1.20+</li>
+            <li>Режим: Survival / PvP / Мини-игры</li>
+            <li>Дружелюбное сообщество и активная команда модераторов</li>
+            <li>Регулярные ивенты и конкурсы</li>
+        </ul>
+    </section>
+    <footer>&copy; 2025 GlitchesCraft</footer>
+</body>
+</html>
